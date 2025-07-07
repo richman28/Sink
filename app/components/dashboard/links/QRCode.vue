@@ -20,7 +20,7 @@ const options = {
   margin: 10,
   qrOptions: { typeNumber: '0', mode: 'Byte', errorCorrectionLevel: 'Q' },
   imageOptions: { hideBackgroundDots: true, imageSize: 0.4, margin: 2 },
-  dotsOptions: { type: 'dots', color: '#000000', gradient: null },
+  dotsOptions: { type: 'square', color: '#000000', gradient: null },
   backgroundOptions: { color: '#ffffff', gradient: null },
   image: props.image,
   dotsOptionsHelper: {
@@ -72,9 +72,9 @@ const qrCodeEl = ref(null)
 
 function updateColor(newColor) {
   qrCode.update({
-    dotsOptions: { type: 'dots', color: newColor, gradient: null },
-    cornersSquareOptions: { type: 'extra-rounded', color: newColor },
-    cornersDotOptions: { type: 'dot', color: newColor },
+    dotsOptions: { type: 'square', color: newColor, gradient: null },
+    cornersSquareOptions: { type: 'square', color: newColor },
+    cornersDotOptions: { type: 'square', color: newColor },
   })
 }
 
