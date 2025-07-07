@@ -1,5 +1,7 @@
 <script setup>
-import Dashboard from '~/pages/dashboard/links.vue'
+definePageMeta({
+  redirect: '/dashboard',
+})
 </script>
 
 <template>
