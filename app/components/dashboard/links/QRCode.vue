@@ -33,7 +33,7 @@ const options = {
       rotation: '0',
     },
   },
-  cornersSquareOptions: { type: 'extra-rounded', color: '#000000' },
+  cornersSquareOptions: { type: 'square', color: '#000000' },
   cornersSquareOptionsHelper: {
     colorType: { single: true, gradient: false },
     gradient: {
@@ -44,7 +44,7 @@ const options = {
       rotation: '0',
     },
   },
-  cornersDotOptions: { type: 'dot', color: '#000000' },
+  cornersDotOptions: { type: 'square', color: '#000000' },
   cornersDotOptionsHelper: {
     colorType: { single: true, gradient: false },
     gradient: {
